@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Talk to Minnal Murali and ask for a next step." />
+  <title>Minnal Murali — Help Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Minnal Murali home">
+      <span class="brand-mark">⚡</span>
+      <span>MINNAL MURALI<span class="brand-dot">.</span></span>
+    </a>
+    <span class="status"><span class="status-dot"></span> SIGNAL ONLINE</span>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">HELP PORTAL / 01</p>
+        <h1>WHEN THE STORM GETS LOUD, THERE’S ALWAYS A HERO WHO ARRIVES IN A FLASH.</h1>
+        <p class="hero-lede">A private conversation with the hero who listens first, finds the problem, and helps you see the next step.</p>
+        <a class="button button-coral" href="#conversation">START A CONVERSATION <span>↗</span></a>
+      </div>
+      <div class="hero-art image-frame">
+        <img src="assets/storm-tree.jpg" alt="Lightning striking a tree beneath a dramatic night sky" />
+        <div class="hero-badge">SIGNAL<br />RECEIVED</div>
+        <div class="hero-caption">Kasaragod / Kerala<br />A story about ordinary courage.</div>
+      </div>
+    </section>
+
+    <section id="conversation" class="conversation section-shell">
+      <div class="section-intro">
+        <p class="eyebrow">THE HANDOFF / 02</p>
+        <h2>TELL ME WHAT’S GOING ON.</h2>
+        <p>The conversation appears immediately. No maze, no form wall — just one clear first move.</p>
+      </div>
+      <div class="chat-layout">
+        <div class="chat-panel" aria-label="Minnal Murali conversation">
+          <div class="chat-topline"><span>MINNAL MURALI / READY</span><span id="chatProgress">01 / 05</span></div>
+          <div id="chatMessages" class="chat-messages" aria-live="polite"></div>
+          <form id="chatForm" class="chat-input-row">
+            <label class="sr-only" for="chatInput">Your response</label>
+            <input id="chatInput" autocomplete="off" placeholder="Type your answer…" required />
+            <button class="send-button" type="submit" aria-label="Send answer">↗</button>
+          </form>
+          <button id="restartChat" class="restart-button" type="button">START OVER</button>
+        </div>
+        <div class="chat-notes">
+          <div class="note-card note-coral"><span class="note-number">01</span><strong>NAME</strong><span>“What should I call you?”</span></div>
+          <div class="note-card"><span class="note-number">02</span><strong>AGE</strong><span>“How old are you?”</span></div>
+          <div class="note-card"><span class="note-number">03</span><strong>LOCATION</strong><span>“Where are you right now?”</span></div>
+          <div class="note-card"><span class="note-number">04</span><strong>EMAIL</strong><span>“Where can the team reach you?”</span></div>
+          <div class="note-card note-cyan"><span class="note-number">05</span><strong>YOUR MESSAGE</strong><span>“So… tell me. How can I help?”</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="origin section-shell">
+      <div class="origin-image image-frame"><img src="assets/minnal-origin.png" alt="Minnal Murali origin story: a tailor transformed by lightning" /></div>
+      <div class="origin-copy">
+        <p class="eyebrow">THE STORY / ORIGIN</p>
+        <h2>WHEN THE STORM GETS LOUD, THERE’S ALWAYS A HERO WHO ARRIVES IN A FLASH.</h2>
+        <p>Jaison was just an ordinary tailor until a lightning strike changed his life. The power was unexpected. The choice was not: use it to protect the people who need help finding their way through the dark.</p>
+        <div class="origin-meta"><span>THE PERSON BEHIND THE POWER</span><strong>Friendly, brave, humorous, and down-to-earth.</strong></div>
+      </div>
+    </section>
+
+    <section class="powers section-shell">
+      <div class="section-intro"><p class="eyebrow">CAPABILITY / 04 SIGNALS</p><h2>FOUR POWERS FOR GETTING UNSTUCK.</h2><p>Each power is practical: it moves a visitor from a stuck moment toward a next step.</p></div>
+      <div class="power-grid">
+        <article class="power-card"><span>01</span><h3>SUPER SPEED</h3><p>Acts fast when someone needs a clear response, not a long wait.</p></article>
+        <article class="power-card power-card-cyan"><span>02</span><h3>LIGHTNING SENSE</h3><p>Finds the important signal inside a noisy story.</p></article>
+        <article class="power-card power-card-coral"><span>03</span><h3>STEADY VOICE</h3><p>Keeps the conversation grounded when emotions run high.</p></article>
+        <article class="power-card"><span>04</span><h3>ROUTE MAPPING</h3><p>Turns a difficult problem into a small, visible next step.</p></article>
+      </div>
+    </section>
+
+    <section class="after-send section-shell">
+      <div class="after-send-copy"><p class="eyebrow">AFTER SEND / 05</p><h2>ONE CONVERSATION. A REAL HANDOFF.</h2><p>Once the request is submitted, the visitor sees a clear confirmation and the site owner receives a structured signal they can act on.</p><div class="confirmation-chip">✓ SIGNAL RECEIVED</div></div>
+      <div class="notification-card"><p class="eyebrow">NOTIFICATION PREVIEW</p><h3>Someone Needs Your Help!</h3><div class="notification-row"><span>Visitor</span><strong>Name, age, location</strong></div><div class="notification-row"><span>Contact</span><strong>Email address</strong></div><div class="notification-row"><span>Signal</span><strong>Request in their own words</strong></div><div class="notification-row"><span>Submitted</span><strong>Date and time</strong></div></div>
+    </section>
+
+    <section class="cta-section section-shell"><p class="eyebrow">THE FIRST MOVE / 06</p><h2>MAKE THE FIRST MOVE.</h2><p>Start a private conversation with Minnal Murali and ask for a next step.</p><a class="button button-coral" href="#conversation">TALK TO MINNAL <span>↗</span></a></section>
+  </main>
+
+  <footer class="site-footer section-shell"><span>MINNAL MURALI / HELP PORTAL</span><span>LISTEN FIRST · FIND THE PROBLEM · PROTECT THE PEOPLE</span></footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
