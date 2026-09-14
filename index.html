@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Talk to Minnal Murali and ask for a next step." />
+  <meta name="app-build" content="minnal-murali-final" />
+  <title>Minnal Murali / Help Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top"><span class="brand-mark">⚡</span><span>MINNAL MURALI<span class="brand-dot">.</span></span></a>
+    <span class="status"><span class="status-dot"></span> SIGNAL ONLINE</span>
+  </header>
+
+  <main id="top">
+    <section class="hero-card card-bleed">
+      <div class="hero-art image-frame">
+        <img class="hero-background" src="assets/gamma-hero.jpeg" alt="Striking lightning over a village at night" />
+        <img class="hero-figure" src="assets/gamma-hero-overlay.png" alt="Minnal Murali standing beneath a lightning storm" />
+      </div>
+      <div class="hero-band">
+        <p class="eyebrow">Minnal murali / HELP PORTAL</p>
+        <h1>MINNAL<br />MURALI</h1>
+        <p class="subheading">A portal for the hero who rises from the lightning to protect his people when the storm hits.</p>
+        <p class="caption align-right">01 / SIGNAL RECEIVED</p>
+      </div>
+    </section>
+
+    <section id="conversation" class="entry-card section-shell">
+      <div class="entry-rail"></div>
+      <div class="entry-main">
+        <p class="eyebrow">ENTRY / 01</p>
+        <h2>Tell me what’s going on.</h2>
+        <p class="subheading">The conversation appears immediately. No maze, no form wall—just one clear first move.</p>
+        <hr />
+        <div class="chat-layout">
+          <div class="chat-panel" aria-label="Minnal Murali conversation">
+            <div class="chat-topline"><span>MINNAL MURALI / ONLINE</span><span id="chatProgress">01 / 05</span></div>
+            <div id="chatMessages" class="chat-messages" aria-live="polite"></div>
+            <form id="chatForm" class="chat-input-row">
+              <label class="sr-only" for="chatInput">Your response</label>
+              <input id="chatInput" autocomplete="off" placeholder="Type your answer…" required />
+              <button class="send-button" type="submit" aria-label="Send answer">↗</button>
+            </form>
+            <button id="restartChat" class="restart-button" type="button">START OVER</button>
+          </div>
+          <div class="signal-panel"><p class="caption">SIGNAL</p><h3>01 / 05</h3><p class="caption">Name</p></div>
+        </div>
+        <div class="entry-controls"><div><p class="caption">YOUR NAME</p><p>Enter your name</p><p class="caption cyan-text">Required field</p></div><div><p class="caption">CONTROL</p><p><b>Start over</b></p><p class="caption">Keyboard friendly · visible focus</p></div></div>
+        <p class="caption footer-note">The panel keeps the next question visible, validates each answer clearly, and carries progress without making the visitor remember where they are.</p>
+      </div>
+    </section>
+
+    <section class="story-card card-bleed">
+      <div class="story-main"><p class="eyebrow">THE STORY / ORIGIN</p><h2>When the storm gets loud, there’s always a hero who arrives in a flash.</h2><hr class="short-rule" /><p class="subheading">Jaison was just an ordinary tailor until a lightning strike changed his life forever. The storm gave him extraordinary powers—and a new responsibility to protect the people around him.</p></div>
+      <div class="story-image image-frame"><img src="assets/gamma-origin.png" alt="Minnal Murali origin story: a tailor transformed by lightning" /></div>
+      <div class="story-person"><p class="eyebrow">THE PERSON BEHIND THE POWER</p><p><b>Friendly, brave, humorous, and down-to-earth.</b> <span class="cyan-text">Minnal Murali</span> may have superpowers, but he still thinks like an ordinary person from the village. He listens, cares, and steps in when people need him most.</p></div>
+      <div class="story-purpose"><p class="eyebrow">THE PURPOSE</p><h3>Listen first. Find the problem. Protect the people. Save the day.</h3></div>
+    </section>
+
+    <section class="powers-card section-shell">
+      <div class="powers-main"><p class="eyebrow">CAPABILITY / 04 SIGNALS</p><h2>Four powers for getting unstuck.</h2><p class="subheading">Each power is practical: it moves the visitor from a stuck moment toward a next step.</p><hr /></div>
+      <div class="power-grid">
+        <article class="power-card"><span>01</span><h3>SUPER SPEED</h3><p>Moves faster than anyone can see, reaching people in danger before it’s too late.</p></article>
+        <article class="power-card surface"><span>02</span><h3>SUPER STRENGTH</h3><p>Uses incredible physical power to overcome obstacles, protect people, and take on powerful enemies.</p></article>
+        <article class="power-card surface"><span>03</span><h3>LIGHTNING POWER</h3><p>Born from the lightning strike that changed Jaison’s life, his abilities are closely connected to the storm.</p></article>
+        <article class="power-card"><span>04</span><h3>LIGHTNING REFLEXES</h3><p>Reacts instantly to danger, allowing him to move through difficult situations and control his speed.</p></article>
+      </div>
+      <aside class="power-aside"><b>Power is useful when it becomes action.</b> The portal turns each signal into a clear question, a careful handoff, and a next move.</aside>
+    </section>
+
+    <section class="handoff-card section-shell">
+      <p class="eyebrow">THE HANDOFF / 02</p><h2>One conversation. A real handoff.</h2><p class="subheading">A short intake keeps the visitor in their own words while giving the next person enough context to help.</p><hr class="coral-rule" />
+      <div class="steps-grid"><div><span>01</span><h3>NAME</h3><p>“What should I call you?”</p></div><div><span>02</span><h3>AGE</h3><p>“How old are you?”</p></div><div><span>03</span><h3>LOCATION</h3><p>“Where are you right now?”</p></div><div><span>04</span><h3>EMAIL</h3><p>“Where can the team reach you?”</p></div></div>
+      <div class="handoff-progress"><div><p class="eyebrow">MINNAL MURALI / READY</p><p><b>So… tell me. How can I help?</b></p></div><div class="progress-box"><p class="caption">PROGRESS</p><h3>04 / 05</h3><p class="caption">Your words next</p></div></div>
+      <div class="message-note"><p class="caption">YOUR MESSAGE</p><p>Describe the grievance, request, or situation in your own words.</p></div>
+    </section>
+
+    <section class="after-card section-shell">
+      <div class="after-main"><p class="eyebrow">AFTER SEND / 03</p><h2>What happens after you press send?</h2><p class="subheading">The visitor sees a clear confirmation. The site owner gets a structured signal they can act on.</p><hr /><div class="confirmation"><p class="eyebrow">CONFIRMATION</p><h3>Signal received.</h3><p>Your message is on its way to the people who can take the next step.</p></div><p class="caption">The handoff connects to the email integration and reports the state returned by that service.</p></div>
+      <div class="notification-card"><p class="eyebrow">NOTIFICATION PREVIEW</p><h3>Someone Needs Your Help!</h3><hr /><p class="caption">Visitor</p><p><b>Name:</b> Visitor name<br /><b>Age:</b> Visitor age<br /><b>Location:</b> Visitor location</p><p class="caption">Contact</p><p><b>Email:</b> visitor@email.com</p><p class="caption">Signal</p><p><b>Request:</b> Visitor’s grievance or request in their own words.</p><p class="caption">Submitted</p><p>Date and time from the submission event.</p></div>
+      <div class="integration-note"><p class="eyebrow">EDITABLE INTEGRATION SETTING</p><p><b>Notification recipient</b></p><p>dayadc1234@gmail.com</p><p class="caption">Replace with your own email or serverless endpoint.</p></div>
+    </section>
+
+    <section class="trust-card section-shell"><p class="eyebrow">BUILD / TRUST / MOTION</p><h2>Built to feel like help, not paperwork.</h2><p class="subheading">The storm-inspired layer adds energy without making the path harder to read, use, or complete.</p><hr /><div class="trust-grid"><div><h3>RESPONSIVE</h3><p>The conversational panel stays primary on small screens. Story modules stack below it.</p></div><div class="surface"><h3>ACCESSIBLE</h3><p>High contrast, visible focus states, readable type, keyboard-friendly controls, and clear error feedback.</p></div></div><div class="mission-meter"><div><p class="eyebrow">LIGHTNING METER</p><h3>68%</h3><p>Signal strength rises as visitors explore missions and complete steps.</p></div><div class="surface"><p class="eyebrow">CURRENT STATE / MISSION EXPLORED</p><hr /><p><b>Hero’s Next Move</b></p><p>Recap the completed mission, then point toward the next story, power, or action.</p></div></div><aside class="power-aside"><b>Visual language:</b> lightning effects, glowing signals, storm-inspired transitions, pulse marks, and subtle animation—with reduced-motion and keyboard-safe behavior.</aside></section>
+
+    <section class="first-move-card card-bleed"><div class="first-move-main"><p class="eyebrow">THE FIRST MOVE / 04</p><h2>MAKE THE<br />FIRST MOVE.</h2><p class="subheading">Start a private conversation with Minnal Murali and ask for a next step.</p><hr class="short-rule" /><p class="caption">LISTEN FIRST · FIND THE PROBLEM · PROTECT THE PEOPLE</p><a class="button" href="#conversation">TALK TO MINNAL <span>↗</span></a></div><div class="first-move-image image-frame"><img src="assets/gamma-closing.png" alt="Storm clearing around a village at first light" /></div></section>
+  </main>
+
+  <footer class="site-footer section-shell"><span>MINNAL MURALI / HELP PORTAL</span><span>LISTEN FIRST · FIND THE PROBLEM · PROTECT THE PEOPLE</span></footer>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
